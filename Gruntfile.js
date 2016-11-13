@@ -67,6 +67,11 @@ var styles_lite = [
 
 module.exports = function(grunt) {
 	grunt.initConfig({
+		options: {
+			harmony: true,
+			require: ['should'],
+			files: '**/*.js'
+		},
 		pkg: grunt.file.readJSON('package.json'),
 		clean: {
 			build: ['dist'],
